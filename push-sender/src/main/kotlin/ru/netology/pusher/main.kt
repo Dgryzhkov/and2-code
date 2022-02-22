@@ -15,13 +15,24 @@ fun main() {
 
     FirebaseApp.initializeApp(options)
 
-    val message = Message.builder()
+/*    val message = Message.builder()
         .putData("action", "LIKE")
         .putData("content", """{
           "userId": 1,
-          "userName": "Petr",
+          "userName": "Georgy",
           "postId": 2,
           "postAuthor": "Netology"
+        }""".trimIndent())
+        .setToken(token)
+        .build()*/
+
+    val message = Message.builder()
+        .putData("action", "POST")
+        .putData("content", """{
+          "userId": 1,
+          "userName": "Vasiliy",
+          "postId": 2,
+          "content": "Ателак Всплеск - препарат искусственной слезы, содержащий гиалуроновую кислоту в высокой концентрации,  который способствует быстрому устранению  симптомов сухости и  дискомфорта глаз. "
         }""".trimIndent())
         .setToken(token)
         .build()
