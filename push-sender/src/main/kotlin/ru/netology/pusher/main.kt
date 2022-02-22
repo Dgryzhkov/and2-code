@@ -19,7 +19,7 @@ fun main() {
         .putData("action", "LIKE")
         .putData("content", """{
           "userId": 1,
-          "userName": "Vasiliy",
+          "userName": "Petr",
           "postId": 2,
           "postAuthor": "Netology"
         }""".trimIndent())
